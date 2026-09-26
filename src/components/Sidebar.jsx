@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Sidebar = () => {
     return (
         <aside className="sidebar">
@@ -10,10 +12,10 @@ const Sidebar = () => {
             </div>
             <nav className="navigation">
                 <div className="nav-section-title">Библиотека</div>
-                <a className="nav-item active" href="index.html">
+                <Link className="nav-item active" to="/">
                     <span>⌂</span>
                     Обзор
-                </a>
+                </Link>
                 <a className="nav-item" href="favorites.html">
                     <span>♡</span>
                     Избранное
